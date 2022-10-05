@@ -1,0 +1,111 @@
+/* Congfiguração geral */
+:root {
+    --color-orange: #f24f00;
+    --color-gray: #666666;
+}
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Oxanium', cursive;
+}
+/* Menu de navegação */
+a, li {
+    color: whitesmoke;
+    text-decoration: none;
+    list-style: none;
+}
+.header {
+    background-color: var(--color-gray);
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 5px solid #f24f00;
+    transition: 1s;
+}
+.menu {
+    display: flex;
+    margin-right: 50px;
+}
+.logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+.menu li a {
+    display: block;
+    margin-left: 10px;
+    padding: 10px;
+    transition: 1s;
+}
+.menu a:hover{
+    color: var(--color-orange);
+    transition: 1s;
+}
+/* Ajuste de tela */
+@media screen and (max-width:736px) {
+    /* Ajuste menu */
+    .header{
+        height: 100px;
+    }
+    .menu {
+        flex-direction: column;
+        transition: 1s;
+        background-color: var(--color-gray);
+        border-radius: 5px;
+        margin-right: 0px;
+    }
+    .menu li a{
+        padding: 2px;
+        font-size: 1.0rem;
+    }
+}
+/* principal */
+.principal {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 30px;
+    background-image: -webkit-linear-gradient(25deg, #666666 50%, #f24f00 50%);
+    transition: 1s;
+}
+.boas_vindas {
+    padding-top: 200px;
+    padding-left: 50px;
+    height: 400px;
+}
+.img_code img {
+    padding: 80px;
+    height: 400px;
+    width: 400px;
+    transition: 1s;   
+}
+hr {
+    width: 270px;
+}
+@media screen and (max-width:939px) {
+    .principal {
+        flex-wrap: wrap;
+        transition: 1s;
+    }
+    
+    .boas_vindas {
+        padding-top: 20px;
+        height: 200px;
+        transition: 1s;
+    }
+    .img_code img {
+        padding-left: 0px;
+        height: 350px;
+        width: 350px;
+    }
+    
+    
+    
+}
